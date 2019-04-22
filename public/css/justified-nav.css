@@ -1,0 +1,126 @@
+
+
+/* Customize the nav-justified links to be fill the entire space of the .navbar */
+.content { width: 100%; }
+.nav-justified {
+  background-color: #eee;
+}
+
+.navbar-default .navbar-nav>li>a, .navbar-default .navbar-text {
+    color: #000 !important;
+}
+
+.navbar-default .navbar-brand {
+    color: #090909;
+    font-weight: bold;
+}
+
+.table .thead-dark th {
+    color: #fff;
+    background-color: #212529;
+    border-color: #32383e;
+  }
+
+.table .thead-dark th:last-child {
+    color: #000;
+    background-color: transparent;
+    border-color: transparent;
+  }
+
+.nav-justified > li > a {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-bottom: 0;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+  background-color: #204c90; /* Old browsers */
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#1859fb), to(#204c90));
+  background-image: -webkit-linear-gradient(top, #1859fb 0%, #204c90 100%);
+  background-image:      -o-linear-gradient(top, #1859fb 0%, #204c90 100%);
+  background-image:         linear-gradient(to bottom, #1859fb 0%,#204c90 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1859fb', endColorstr='#204c90',GradientType=0 ); /* IE6-9 */
+  background-repeat: repeat-x; /* Repeat the gradient */
+}
+
+.nav-justified > li:not(.active) > a:hover,
+.nav-justified > li:not(.active) > a:focus {
+  background-color: #204c90;
+  transition: 0.5s;
+}
+
+.nav-justified > li:not(.active) > a:hover {opacity: 0.8}
+
+.nav-justified > .active > a,
+.nav-justified > .active > a:hover,
+.nav-justified > .active > a:focus {
+  background-color: #204c90;
+  background-image: none;
+  -webkit-box-shadow: inset 0 3px 7px rgba(0,0,0,.15);
+          box-shadow: inset 0 3px 7px rgba(0,0,0,.15);
+}
+
+.nav-justified > li:first-child > a {
+  
+}
+.nav-justified > li:last-child > a {
+  border-bottom: 0;
+ 
+}
+
+.panel-warning>.panel-heading {
+    background-color: #fff4b9;
+}
+
+@media (min-width: 768px) {
+  .nav-justified {
+    max-height: 52px;
+  }
+  .nav-justified > li > a {
+    border-right: 1px solid #204c90;
+    border-left: 1px solid #204c90;
+  }
+  .nav-justified > li:first-child > a {
+    border-left: 0;
+  }
+  .nav-justified > li:last-child > a {
+    border-right: 0;
+  }
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+}
+
+.sticky + .container {
+  padding-top: 102px;
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  /* Remove the padding we set earlier */
+  .masthead {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  .modal-dialog {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 748px) {
+  /* Remove the padding we set earlier */
+  #menufix {
+    display: none;
+  }
+
+  #antes2editor {
+    padding: 2rem 5rem !important;
+  }
+
+  #antes1editor {
+    padding: 1cm 1cm !important;
+  }
+}
